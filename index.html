@@ -178,7 +178,7 @@ html.lenis,html.lenis body{height:auto}
 .field textarea::placeholder{color:var(--soft)}
 .form__side{grid-column:9 / span 4;padding-top:clamp(22px,2.6vw,36px);position:sticky;top:calc(var(--strip) + 28px);align-self:start}
 .msg{background:#fff;border:1px solid var(--line);padding:20px 22px;font-size:15.5px;line-height:1.55;white-space:pre-wrap;word-break:break-word;margin:12px 0 18px;border-radius:2px 18px 18px 18px;min-height:150px}
-.send{display:flex;align-items:center;justify-content:space-between;gap:14px;width:100%;padding:19px 24px;background:var(--ink);color:var(--paper);border:1px solid var(--ink);border-radius:999px;font:400 12px/1 var(--sans);letter-spacing:.18em;text-transform:uppercase;text-decoration:none;cursor:pointer;transition:background .3s,color .3s}
+.send{display:flex;align-items:center;justify-content:space-between;gap:14px;width:100%;padding:19px 24px;background:var(--ink);color:var(--paper);border:1px solid var(--ink);border-radius:999px;font:400 12px/1.4 var(--sans);letter-spacing:.18em;text-transform:uppercase;text-decoration:none;text-align:left;cursor:pointer;transition:background .3s,color .3s}
 .send:hover{background:transparent;color:var(--ink)}
 .send svg{width:18px;height:18px;flex:none}
 .form__side small{display:block;margin-top:14px;font-size:13px;color:var(--soft)}
@@ -518,12 +518,12 @@ html.lenis,html.lenis body{height:auto}
   /* revelações */
   gsap.utils.toArray('[data-reveal]').forEach(function(el){
     var img=el.querySelector('img');
-    gsap.timeline({scrollTrigger:{trigger:el,start:'top 86%',once:true}})
-      .fromTo(el,{clipPath:'inset(100% 0% 0% 0%)'},{clipPath:'inset(0% 0% 0% 0%)',duration:1.35,ease:'power3.inOut'})
-      .fromTo(img,{scale:1.22},{scale:1,duration:1.8,ease:'power3.out'},0);
+    gsap.timeline({scrollTrigger:{trigger:el,start:'top 94%',once:true}})
+      .fromTo(el,{clipPath:'inset(100% 0% 0% 0%)'},{clipPath:'inset(0% 0% 0% 0%)',duration:1.05,ease:'power3.out'})
+      .fromTo(img,{scale:1.2},{scale:1,duration:1.6,ease:'power3.out'},0);
   });
   gsap.utils.toArray('[data-fade]').forEach(function(el){
-    gsap.fromTo(el,{opacity:0,y:26},{opacity:1,y:0,duration:1.1,ease:'power2.out',scrollTrigger:{trigger:el,start:'top 90%',once:true}});
+    gsap.fromTo(el,{opacity:0,y:26},{opacity:1,y:0,duration:.9,ease:'power2.out',scrollTrigger:{trigger:el,start:'top 95%',once:true}});
   });
 
   /* “Não é só tinta.” — escrito pelo scroll */
