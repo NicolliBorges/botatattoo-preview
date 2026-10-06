@@ -197,7 +197,7 @@ html.lenis,html.lenis body{height:auto}
 .fab svg{width:16px;height:16px}
 
 /* ——— celular ——— */
-@media (max-width:899px){
+@media (max-width:759px){
   body{font-size:16px}
   .kodra{justify-content:center;font-size:9.5px;letter-spacing:.13em}
   .kodra a{display:none}
@@ -251,7 +251,7 @@ html.lenis,html.lenis body{height:auto}
   .foot div{grid-column:1 / -1}
   .fab{right:12px;bottom:12px}
 }
-@media (min-width:900px){ .fab{display:none} }
+@media (min-width:760px){ .fab{display:none} }
 @media (prefers-reduced-motion:reduce){ .ink{height:auto} .ink__stick{position:relative;height:auto;padding-top:80px;padding-bottom:80px} }
 </style>
 </head>
@@ -546,7 +546,7 @@ html.lenis,html.lenis body{height:auto}
 
   /* miniatura que segue o cursor na lista de estilos */
   var peek=document.getElementById('peek'), pimg=peek.querySelector('img');
-  if(window.matchMedia('(hover:hover) and (min-width:900px)').matches){
+  if(window.matchMedia('(hover:hover) and (min-width:760px)').matches){
     var qx=gsap.quickTo(peek,'left',{duration:.5,ease:'power3'}), qy=gsap.quickTo(peek,'top',{duration:.5,ease:'power3'});
     document.querySelectorAll('[data-peek]').forEach(function(a){
       a.addEventListener('mouseenter',function(){pimg.src=a.dataset.peek;peek.classList.add('on')});
